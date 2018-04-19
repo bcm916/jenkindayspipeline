@@ -11,7 +11,6 @@ pipeline {
         stage('world') {
           steps {
             echo 'I want pecan pie!!!'
-            sh 'go version'
           }
         }
       }
