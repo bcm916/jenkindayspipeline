@@ -8,11 +8,14 @@ pipeline {
             echo 'Hello'
           }
         }
-        stage('world') {
-          steps {
-            echo 'I want pecan pie!!!'
-          }
-        }
+      }
+    }
+    stage('Deploy') {
+      input {
+        message 'Should we continue?'
+      }
+      steps {
+        echo 'Continuing with deployment'
       }
     }
   }
